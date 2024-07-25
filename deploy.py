@@ -2,14 +2,12 @@ import streamlit as st
 import cv2
 import pickle
 import numpy as np
-from skimage.feature import hog
-from skimage import exposure
 from ultralytics import YOLO
 from collections import Counter
 import io
 
-gis_v8s = YOLO(r"runs\detect\train13\weights\best.pt")
-gis_v8n = YOLO(r"runs\detect\train\weights\best.pt")
+gis_v8s = YOLO(r'runs/detect/train13/weights/best.pt')
+gis_v8n = YOLO(r'runs/detect/train/weights/best.pt')
 
 def predict_and_display(frame, model):
     if frame is None:
