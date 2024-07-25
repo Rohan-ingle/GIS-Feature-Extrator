@@ -1,4 +1,4 @@
 opencv-python==4.9.0.80
-numpy
+numpy==1.26.4
 scikit-learn
 ultralytics
